@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="container">
       <div className="form-control">
-        <h2 className='text'>To Do App With TypeScript</h2>
+        <h2 className='text'>@cooper ToDo App TypeScript</h2>
         <div className="form">
           <Home />
         </div>

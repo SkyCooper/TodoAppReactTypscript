@@ -21,11 +21,11 @@ const InputForm: React.FC<IInputForm> = ({ addTodo }) => {
     <div className="input-form">
       <input
         className="input-task"
-        placeholder="Enter the todo..."
+        placeholder="Enter todo..."
         type="text"
         maxLength={40}
         value={task}
-        onChange={(e) => setTask(e.target.value)}
+        onChange={(e) => setTask(e.target.value.toUpperCase())}
       />
       <button
         className="btn-hover btn-color"
@@ -33,7 +33,7 @@ const InputForm: React.FC<IInputForm> = ({ addTodo }) => {
         onClick={handleClick}
         disabled={!task} //? yani input boş ise tıklanamasın, initial değer boş string yani false, değili true,  (yani buton disable olsun true) 
       >
-        Add New Todo
+        Add Todo
       </button>
     </div>
   );
