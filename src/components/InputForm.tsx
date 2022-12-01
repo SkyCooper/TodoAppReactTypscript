@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
+
+interface IInputForm {
+  // addTodo: (text:string)=> void;
+  //* yukarıdaki gibi de yazılır, veya globalden çekilir.
+  addTodo: AddFn;
+}
 
 
+//! component prop alıyorsa React.FC (function demek FC) yapmak gerekiyor.
+const InputForm:React.FC<IInputForm> = ({addTodo}) => {
+  const [task, setTask] = useState("")
 
-const InputForm = () => {
-  
+
   return (
     <div className="input-form">
       <input

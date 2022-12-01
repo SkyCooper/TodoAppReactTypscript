@@ -1,19 +1,22 @@
-import React from 'react';
+import React from "react";
 
 interface IListItem {
-  item:TodoType;
+  item: TodoType;
 }
+//* buradaki interface de aslında types.d.ts içine alınıp global yapılabilirdi.
 
-
-//! component prop alıyorsa React.FC yapmak gerekiyor.
-const TodoListItem:React.FC<IlistItem> = ({item}) => {
+//! component prop alıyorsa React.FC (function demek FC) yapmak gerekiyor.
+const TodoListItem: React.FC<IListItem> = ({ item }) => {
   return (
     <li>
-      <p className='checked'>Todo </p>
-      <p> Todo </p>
-      <span className="task-icons" >✖️</span>
+      {item.isDone ? ( // yani tammlanmış ise üstünü çiz, değilse normal yaz
+        <p className="checked">{item.task} </p>
+      ) : (
+        <p> {item.task} </p>
+      )}
+      <span className="task-icons">✖️</span>
     </li>
   );
 };
 
-export default TodoListItem
+export default TodoListItem;
