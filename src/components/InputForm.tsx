@@ -31,7 +31,7 @@ const InputForm: React.FC<IInputForm> = ({ addTodo }) => {
         className="btn-hover btn-color"
         type="submit"
         onClick={handleClick}
-        disabled={!task} //* yani input boş ise tıklanamasın
+        disabled={!task} //? yani input boş ise tıklanamasın, initial değer boş string yani false, değili true,  (yani buton disable olsun true) 
       >
         Add New Todo
       </button>
