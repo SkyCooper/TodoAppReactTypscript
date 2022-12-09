@@ -8,8 +8,8 @@ import TodoListItem from "./TodoListItem";
 //? import/export yapmadan global olarak kullanılabilir oldu.
 
 //! component prop alıyorsa React.FC yapmak gerekiyor.
-const TodoList: React.FC<ITodoList> = ({ todos, toggleTodo, deleteTodo }) => {
-  // const TodoList: FC<ITodoList> = ({ todos }) => {
+// const TodoList: React.FC<ITodoList> = ({ todos, toggleTodo, deleteTodo }) => {
+  const TodoList: FC<ITodoList> = ({ todos, toggleTodo, deleteTodo }) => {
   // {FC} olarak import edip yukarıdaki gibi kullanılabilir.
   return (
     <ul>
