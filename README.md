@@ -1,10 +1,10 @@
 # Project : ToDoApp Typscript
 
-## Check The Live Website ➡️ [Live Website](https://skycooper.github.io)
+## Check The Live Website ➡️ [Live Website](https://todo-app-react-typscript-rose.vercel.app/)
 
 ## Visualization of the Website
 
-![Form](./gallery.gif)
+![Form](./todo.gif)
 
 ## Description
 
