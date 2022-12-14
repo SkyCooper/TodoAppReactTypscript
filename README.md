@@ -8,7 +8,7 @@
 
 ## Description
 
-Project aims to create an app using React Typscript.
+Project aims to create an ToDo App using React Typscript.
 
 ## Learning Outcomes
 
