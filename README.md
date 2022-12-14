@@ -32,9 +32,11 @@ Project(folder)
 │     └── index.html
 ├── src
 │    ├── components
-│    │       ├── Picture.jsx
+│    │       ├── InputForm.tsx
+│    │       ├── ToDoList.tsx
+│    │       ├── ToDoListItem.tsx
 │    ├── pages
-│    │       ├── Homepage.jsx
+│    │       ├── Home.tsx
 │    ├── App.css
 │    ├── App.tsx
 │    ├── index.tsx
